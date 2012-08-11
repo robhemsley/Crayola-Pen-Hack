@@ -17,6 +17,9 @@
 int rgb_pins[] = {8, 7, 6};    //RGB Pins for Pen
 int cap_pin = 9;               //Relay Pin
 
+int binary_true = 200;         //Binary True Delay Time
+int binary_false = 100;        //Binary False Delay Time
+
 int count = 0;
 int colour_iter = 0;
 
@@ -69,34 +72,34 @@ void loop() {
     //Set the byte array based on the current colour
     switch(colour){
       case 0:
-        bits[0] = 100;
-        bits[1] = 100;
-        bits[2] = 100;
-        bits[3] = 100;
-        bits[4] = 100;
-        bits[5] = 100;
-        bits[6] = 100;
-        bits[7] = 200;
+        bits[0] = binary_false;
+        bits[1] = binary_false;
+        bits[2] = binary_false;
+        bits[3] = binary_false;
+        bits[4] = binary_false;
+        bits[5] = binary_false;
+        bits[6] = binary_false;
+        bits[7] = binary_true;
         break;
       case 1:
-        bits[0] = 100;
-        bits[1] = 100;
-        bits[2] = 100;
-        bits[3] = 100;
-        bits[4] = 100;
-        bits[5] = 100;
-        bits[6] = 200;
-        bits[7] = 200;
+        bits[0] = binary_false;
+        bits[1] = binary_false;
+        bits[2] = binary_false;
+        bits[3] = binary_false;
+        bits[4] = binary_false;
+        bits[5] = binary_false;
+        bits[6] = binary_true;
+        bits[7] = binary_true;
         break;
       case 2:
-        bits[0] = 100;
-        bits[1] = 100;
-        bits[2] = 100;
-        bits[3] = 100;
-        bits[4] = 100;
-        bits[5] = 100;
-        bits[6] = 200;
-        bits[7] = 100;
+        bits[0] = binary_false;
+        bits[1] = binary_false;
+        bits[2] = binary_false;
+        bits[3] = binary_false;
+        bits[4] = binary_false;
+        bits[5] = binary_false;
+        bits[6] = binary_true;
+        bits[7] = binary_false;
         break;
     }
     
