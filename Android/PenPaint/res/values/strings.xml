@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PenPaint</string>
+    <integer name="flash_size">80</integer>
+    <integer name="start_tollerance">100</integer>
+    <integer name="tap_tollerance">40 </integer>
+    <integer name="tap_clock">1000</integer>
+    <integer name="tap_timeout">1000</integer>
+    <integer name="binary_true">200</integer>
+    <integer name="binary_false">100</integer>
+    <integer-array name="start_sequence">
+    	<item>300</item>
+        <item>100</item>
+        <item>300</item>
+        <item>100</item>
+    </integer-array>
+</resources>
